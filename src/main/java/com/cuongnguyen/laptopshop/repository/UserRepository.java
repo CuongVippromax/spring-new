@@ -8,8 +8,9 @@ import org.springframework.stereotype.Repository;
 import com.cuongnguyen.laptopshop.domain.User;
 
 @Repository
-public interface UserRepository  extends JpaRepository<User,Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
     User save(User cuong);
+
     List<User> findByEmail(String email);
-    
-} 
+
+}

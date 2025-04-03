@@ -48,4 +48,8 @@ public class UserService {
     public Role getRoleByName(String name) {
         return this.roleRepository.findByName(name);
     }
+
+    public void deleteAUser(long id) {
+        this.userRepository.deleteById(id);
+    }
 }
